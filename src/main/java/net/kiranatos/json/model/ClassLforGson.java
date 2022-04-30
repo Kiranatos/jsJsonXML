@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 import java.math.BigInteger;
 import java.util.Date;
 
+// for demonstartion actions with gson-annotations
 public class ClassLforGson {
     public Date date; 
     @SerializedName("paramNameInJSONFile")
@@ -19,6 +20,5 @@ public class ClassLforGson {
         return "ClassLforGson { \n" + 
                 "  date=" + date + 
                 ",\n  integer=" + integer + '}';
-    }
-    
+    }    
 } 

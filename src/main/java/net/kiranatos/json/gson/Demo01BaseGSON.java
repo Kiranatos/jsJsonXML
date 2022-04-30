@@ -15,9 +15,9 @@ import java.util.Map;
 import net.kiranatos.json.model.ClassKforGson;
 import net.kiranatos.json.model.ClassLforGson;
 
-public class TestGSON {
+public class Demo01BaseGSON {
     public static void main(String[] args) {        
-        Gson gson = new Gson();        
+        Gson gson = new Gson();
         
         System.out.println("Marshallization:");
         ClassKforGson k1 = ClassKforGson.initializeMe();
@@ -31,9 +31,9 @@ public class TestGSON {
         System.out.println(k2);
         
         System.out.println("\nDemarshallization from file:");        
-        /*try(FileReader reader = new FileReader("file.json")){
+        /* try(FileReader reader = new FileReader("file.json")){
             ClassKforGson kn = gson.fromJson(reader, ClassKforGson.class);
-        }catch(Exception e){}*/        
+        } catch(Exception e) { } */
         
         System.out.println("\nMarshallization and deserialization of simple and primitive types:");
         Gson gson2 = new Gson(); 
@@ -51,7 +51,7 @@ public class TestGSON {
         Map<String, Integer> map = new LinkedHashMap<>(); 
         map.put("USD", 123); 
         map.put("EUR", 321); 
-        String json = gson.toJson(map); 
+        String json = gson.toJson(map);
         System.out.println(json);
         Type type = new TypeToken<Map<String, Integer>>(){}.getType(); 
         // variant 1:
@@ -70,7 +70,7 @@ public class TestGSON {
         collection.add(new File("")); 
         System.out.println(gson.toJson(collection)); // ["string",10,{"path":""}]
         
-        System.out.println("\nAnnotation SerializedName writes & reads specific "
+        System.out.println("\nAnnotation SerializedName in class ClassLforGson writes & reads specific "
                 + "name(paramNameInJSONFile) in JSON file, that different from name of field in class:");
         ClassLforGson clfg = new ClassLforGson(new Date(), BigInteger.valueOf(66L)); 
         System.out.println(new Gson().toJson(clfg, ClassLforGson.class));        

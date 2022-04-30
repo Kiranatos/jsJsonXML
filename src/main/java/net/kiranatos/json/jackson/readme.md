@@ -16,3 +16,8 @@ class SimplePojo implements Serializable {
         this.name = name;
     }
 }
+
+
+// законспектировать
+https://www.baeldung.com/jackson-linkedhashmap-cannot-be-cast
+// мое наблюдение: класс в коллекции должен быть поджо

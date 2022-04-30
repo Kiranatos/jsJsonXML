@@ -11,7 +11,7 @@ import net.kiranatos.json.model.ClassAforJackson;
 import net.kiranatos.json.model.ClassBforJackson;
 import net.kiranatos.json.model.ClassCforJackson;
 
-public class Demo01Jackson {
+public class Demo01BaseJackson {
     public static void main(String[] args) throws JsonProcessingException {
         System.out.println("\tExamples of Jackson library's work:");        
         ObjectMapper objMap = new ObjectMapper();

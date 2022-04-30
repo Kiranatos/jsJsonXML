@@ -52,3 +52,8 @@ Libraries: DOM, JAXB, SAX, XPath
     DOMUpdater - read from coursesDOMParser.xml, update info and write in updatedCoursesDOMUpdater.xml
     JAXBConverter - have two methods for marshalling and demarshalling in file coursesJAXBConverter.xml
  SAX, XPath - поверхностно прошёл
+
+JSON : 
+    jackson: в jackson/readme изучить как работать с аннотациями
+    Demo01Basic - базовые вещи, как (де)сериализовать класс
+    Demo02Collection - как (де)сериализовать коллекции

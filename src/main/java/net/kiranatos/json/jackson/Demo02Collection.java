@@ -22,6 +22,8 @@ public class Demo02Collection {
         
         objMap.writeValue(new File(PATH), listW); // write in file
         
+        /*********************** HOW TO READ : *******************************/
+        
         text = "%n\t 1st variant:%s%n%n";
         List<ClassBforJackson> listR =
                 objMap.readValue(new File(PATH), new TypeReference<List<ClassBforJackson>>(){});        
@@ -75,8 +77,13 @@ public class Demo02Collection {
     static <T> List<T> jsonArrayToList2(String json, Class<T> elementClass) throws IOException {
         return new ObjectMapper().readValue(json, new TypeReference<List<T>>(){});
     }
-    
-    // just for initialization
+        
+    /**
+     * Just for example initialization.
+     * 
+     * @param n - quantity
+     * @return list of ClassBforJackson objects
+     */
     private static List<ClassBforJackson> getList(int n) {
         List<ClassBforJackson> list = new ArrayList<ClassBforJackson>();
         for (int i = 0; i < n; i++) {

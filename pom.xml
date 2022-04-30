@@ -30,7 +30,7 @@
         </dependency> 
         
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310 -->
-        <dependency> <!-- dependency #3Jackson. For clas JavaTimeModule -->
+        <dependency> <!-- dependency #3Jackson. For clas JavaTimeModule in class Demo01Jackson -->
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
             <version>2.12.3</version>
