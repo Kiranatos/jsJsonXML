@@ -9,9 +9,9 @@ https://www.baeldung.com/jackson-xml-serialization-and-deserialization
 JSON - JavaScript Object Notation
 Libraries: 
  - GSON
-    (Demonstration start point class : net.kiranatos.json.gson.TestGSON)
+    (Demonstration start point class : net.kiranatos.json.gson.Demo01BaseGSON)
  - Jackson https://github.com/FasterXML/jackson-databind
-    (Demonstration start point class : net.kiranatos.json.jackson.TestJackson)
+    (Demonstration start point class : net.kiranatos.json.jackson.Demo01BaseJackson)
 
 Валидатор: https://jsonformatter.org
 Covertors: 

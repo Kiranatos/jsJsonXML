@@ -3,10 +3,10 @@
     
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.kiranatos</groupId>
-    <artifactId>SMVNJSONXML</artifactId>
+    <artifactId>jsJsonXML</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>        
-    <name>SMVNJSONXML</name>
+    <name>jsJsonXML</name>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
